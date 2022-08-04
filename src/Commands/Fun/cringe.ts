@@ -5,8 +5,8 @@ import {
     EmbedBuilder
 } from "discord.js";
 import { existsSync , readdirSync } from 'fs';
-
-const dir = '../../Media/Cringe'
+import { join } from 'path';
+const dir = join(__dirname, '/../../../Media/Cringe')
 const files = readdirSync(dir)
 
 for (const file of files) {
@@ -36,10 +36,10 @@ export const command: Command = {
 
         
 
-        if (existsSync(`../../Media/Cringe/${text}.webm`)) {
-            return await interaction.reply({ files: [`../../Media/Cringe/${text}.webm`] });
+        if (existsSync(`${dir}/${text}.webm`)) {
+            return await interaction.reply({ files: [`${dir}/${text}.webm`] });
         }
 
-        else return await interaction.reply({ files: [`../../Media/Cringe/mexico.webm`] });
+        else return await interaction.reply({ files: [`${dir}/mexico.webm`] });
     }
 };
