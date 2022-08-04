@@ -27,7 +27,7 @@ export const command: Command = {
 
         const Embed = new EmbedBuilder()
         .setColor(client.env.BOT_COLOR)
-        .setTitle("Cringe Help").setDescription("leave blank for the mexican version")
+        .setTitle("Cringe Help").setDescription("leave blank for the mexican version ")
         for (const file of files) {
             Embed.addFields({name:`${file.replace('.webm','')}`, value:`Oh No Cringe ${file} Version`})
           }
