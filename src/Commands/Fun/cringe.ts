@@ -9,9 +9,7 @@ import { join } from 'path';
 const dir = join(__dirname, '/../../../Media/Cringe')
 const files = readdirSync(dir)
 
-for (const file of files) {
-  console.log(file)
-}
+
 
 export const command: Command = {
     name: "cringe",
@@ -38,6 +36,8 @@ export const command: Command = {
 
         if (existsSync(`${dir}/${text}.webm`)) {
             return await interaction.reply({ files: [`${dir}/${text}.webm`] });
+        } else if (text === 'help') {
+            return await interaction.reply({ embeds:[Embed] });
         }
 
         else return await interaction.reply({ files: [`${dir}/mexico.webm`] });
