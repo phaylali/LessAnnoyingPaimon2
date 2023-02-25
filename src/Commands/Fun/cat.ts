@@ -10,7 +10,7 @@ interface CatApiResponse {
 	width: number;
 	height: number;
 }
-const catNames = ['يعقوب قمر الدين دبيازة','خالد كشميري','خضر كرويتا','اسماعيل أحمد كنباوي','عثمان عبد الجليل ششة','محمد سنبل',];
+const catNames = ["يعقوب قمر الدين دبيازة","خالد كشميري","خضر كرويتا","اسماعيل أحمد كنباوي","عثمان عبد الجليل ششة","محمد سنبل",];
 
 export const command: Command = {
 	name: "cat",

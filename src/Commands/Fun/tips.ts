@@ -50,25 +50,25 @@ export const command: Command = {
 export const choices = ["all", "mondstadt", "liyue", "inazuma", "domains", "abyss", "teapot", "apple", "enkanomiya", "general"];
 
 export const topicChoice = (choice: string) => {
-	if (choice === 'all')
+	if (choice === "all")
 		return all[Math.floor(Math.random() * all.length)].toString();
-	if (choice === 'mondstadt')
+	if (choice === "mondstadt")
 		return mondstadt[Math.floor(Math.random() * mondstadt.length)].toString();
-	if (choice === 'liyue')
+	if (choice === "liyue")
 		return liyue[Math.floor(Math.random() * liyue.length)].toString();
-	if (choice === 'inazuma')
+	if (choice === "inazuma")
 		return inazuma[Math.floor(Math.random() * inazuma.length)].toString();
-	if (choice === 'domains')
+	if (choice === "domains")
 		return domains[Math.floor(Math.random() * domains.length)].toString();
-	if (choice === 'abyss')
+	if (choice === "abyss")
 		return abyss[Math.floor(Math.random() * abyss.length)].toString();
-	if (choice === 'teapot')
+	if (choice === "teapot")
 		return teapot[Math.floor(Math.random() * teapot.length)].toString();
-	if (choice === 'apple')
+	if (choice === "apple")
 		return apple[Math.floor(Math.random() * apple.length)].toString();
-	if (choice === 'enkanomiya')
+	if (choice === "enkanomiya")
 		return enkanomiya[Math.floor(Math.random() * enkanomiya.length)].toString();
-	if (choice === 'general')
+	if (choice === "general")
 		return general[Math.floor(Math.random() * general.length)].toString();
 };
 
@@ -84,7 +84,7 @@ export class TipEmbedBuilder {
 			.setColor(embedColor)
 			.setTitle(
 				`Loading Screen Tip ${choice.toUpperCase()}`
-			)
+			);
 	}
 }
 
@@ -131,7 +131,7 @@ const mondstadt = [
 	"The Fatui: A Snezhnayan organization that seeks only power. They are all the more active in regions full of mystery and ruins such as Dragonspine.",
 	"Wolvendom: A revered and ancient spirit holds court in this land. It is the realm of the wolves, and thus was its name derived.",
 
-]
+];
 const general = [
 	"Abyss Order: An organization made out of non-human monsters. They are the enemies of surface civilization, and thrive in many corners of the world.",
 	"Abyss Order: Driven on by the Abyss, they covet the lives of those who live on the surface, and dream of overturning the rule of the gods.",
@@ -280,7 +280,7 @@ const general = [
 	"World: Teyvat has its own 'laws.'",
 	"World Quests: On your adventure, you will encounter people who seem to be in dire need of help. Talk to these people, and they'll often have something for you to assist with.",
 	"World Quests: The world is full of all sorts of big opportunities and daunting challenges, as well as small errands... Travelers eager to lend a helping hand to others may come across valuable rewards for their troubles.",
-]
+];
 const enkanomiya = [
 	"Bokuso Box: 'Draw near to good and shun evil.'This is a secret treasure of Byakuyakoku, able to store light and disperse darkness.",
 	"Corrupted Waypoints: Waypoints shrouded in darkness lose their original functionality.You can consume specialized materials to use secret arts that can push the darkness back and restore their functions",
@@ -291,7 +291,7 @@ const enkanomiya = [
 	"The Encroaching Dark: During the 'Three Realms Gateway Offering' event, Enkanomiya will be covered in darkness.This darkness has a corrupting influence, and if allowed to build up, it will cause battles to be abnormally difficult.Upgrade your Bokuso Box to increase your resistance to darkness.",
 	"Tokoyo Legume: A plant that appears within Enkanomiya during the 'Three Realms Gateway Offering' event. It was originally only to be used as fertilizer.It will only appear when you approach it with a Bokuso Box containing energy.",
 	"Vassals of Watatsumi: They were once Watatsumi Omikami's servants, and are said to have had half-human, half-snake appearances.",
-]
+];
 const apple = [
 	"Dodo-King: A mysterious figure who has sent Klee a letter. It claims to be the overlord of the Golden Apple Archipelago, and seems to have wild and marvelous modes of mechanism manipulation...",
 	"Golden Apple Archipelago: Dangerous whirlpools can appear near monster encampments. Waveriders that are sucked into these whirlpools will take continuous damage...",
@@ -303,7 +303,7 @@ const apple = [
 	"Map Tabs: This world contains mysterious areas like adeptal abodes and the Golden Apple Archipelago, whose location relative to known regions is unclear. Use the Map Tabs to switch between these regions and known ones quickly.",
 	"Waverider: The Waverider is a mysterious waterborne vehicle that can continuously travel across the ocean's surface. It is armed with two weapons, the Swiftstrike Cannon and the Heavy Cannon. Use Waverider Waypoints to summon the Waverider to its owner's side.",
 	"Wind-Blessed Harpasta: Harpasta carry Mondstadt's traditions and with them, the wishes of the people. It is said that they can bring the Anemo Archon's protection...",
-]
+];
 const teapot = [
 	"Furnishings: Placing furnishings within the Serenitea Pot will affect the adeptal energy of the realm. Abundant adeptal energy may also lead to an increase in the various products within the realm.",
 	"Realm Layout: The realms within a Serenitea Pot can come in all shapes and forms. But no matter how they change, they can never exceed the size of this teapot.",
@@ -311,11 +311,11 @@ const teapot = [
 	"Serenitea Pot: Companions who remain in the Serenitea Pot for a long time may take a liking to certain furnishings and prepare gifts for the Traveler in return...",
 	"Teapot Traveling Salesman: A Teapot Traveling Salesman will sometimes drop by the Serenitea Pot with rare goods in tow. If these wares are to your liking, purchase them decisively — spare no time second-guessing yourself.",
 	"Wood: Wood can be obtained from cutting various trees throughout Teyvat.",
-]
+];
 const domains = [
 	"Domain: It is said that glorious civilizations once covered every corner of the land, above and below ground, in days of yore. Those once-glorious civilizations have long perished, and all that remains of them today is the cities and altars they built deep underground.",
 	"Doors of Resurrection: Gateways to life found in Domains. Said to be formed from the root tips of a tree that permeates the entire world. By touching them, those blessed by the world will receive the gift of life anew should they stumble and fall.",
-]
+];
 const abyss = [
 	"Elemental Nodes: A trial item that can be found in domains. It provides nearby monsters with Elemental affixes. If you do not adeptly counter these Elemental affixes with Elemental attacks of your own, it can turn a once-easy battle quite a thorny challenge.",
 	"Spiral Abyss: Benediction of the Abyss is a wise choice. The Spiral Abyss contains two kinds of blessings, this one belonging to the ancient will carried within it.",
@@ -328,14 +328,14 @@ const abyss = [
 	"Spiral Abyss: To conquer Divergence challenges, you must split your party into two groups. Legends say that ancient kings and priests worked together to climb a tower touching the sky. What could they have been seeking...?",
 	"Spiral Abyss: When you don't have enough Abyssal Stars, the deeper floors of the abyss will not open their doors for you. Some people believe these dim 'stars' are eerily similar to a common symbol seen around Teyvat.",
 	"Spiral Abyss: While you consecutively challenge three chambers on each floor, you cannot change your party configuration. As you venture deeper, the path gets more narrow and is filled with thorns.",
-]
+];
 const inazuma = [
 	"Adventure: While travelling with Electrograna, you can use the Thunder Sphere to pass through dimensions in a flash.",
 
-]
+];
 const liyue = [
 	"Adobe: A realm created by the adepti. Abodes have their own rules and logic, and are in some ways no different from pocket dimensions."
-]
+];
 
 
-const all = [...abyss, ...apple, ...domains, ...enkanomiya, ...general, ...mondstadt, ...teapot, ...inazuma, ...liyue]
+const all = [...abyss, ...apple, ...domains, ...enkanomiya, ...general, ...mondstadt, ...teapot, ...inazuma, ...liyue];

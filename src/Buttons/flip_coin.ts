@@ -15,7 +15,7 @@ export const button: Button = {
 			flipCoin(choices),
 			choice,
 			choices,
-			client.env.BOT_COLOR
+			//client.env.BOT_COLOR
 		);
 		const buttonsRow = new CoinButtonsRowBuilder(choices);
 

@@ -2,7 +2,6 @@ import {
 	ActionRowBuilder,
 	ButtonBuilder,
 	ButtonStyle,
-	ColorResolvable,
 	EmbedBuilder
 } from "discord.js";
 
@@ -16,15 +15,13 @@ export class CoinEmbedBuilder {
 	constructor(
 		winner: string,
 		choice: string,
-		choices: string[],
-		embedColor: ColorResolvable
-	) {
+		choices: string[]	) {
 		return new EmbedBuilder()
 			.setDescription(`${winner == choices[0] ? choices[0] : choices[1]} won!, you chose ${choice}`)
-			.setColor(winner.toLocaleLowerCase() == choice? 'Green':'Red')
+			.setColor(winner.toLocaleLowerCase() == choice? "Green":"Red")
 			.setTitle(
 				`${winner.toLocaleLowerCase() == choice ? "GG Copium" : "You Fucking Loser!"}`
-			).setImage(winner.toLocaleLowerCase() === 'head' ? 'https://i.imgur.com/onRIi79.jpeg':'https://i.imgur.com/4PPZu9Z.jpeg');
+			).setImage(winner.toLocaleLowerCase() === "head" ? "https://i.imgur.com/onRIi79.jpeg":"https://i.imgur.com/4PPZu9Z.jpeg");
 	}
 }
 

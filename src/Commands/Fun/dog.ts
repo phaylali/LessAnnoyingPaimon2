@@ -9,13 +9,13 @@ interface DogApiResponse {
 	width: number;
 	height: number;
 }
-const dogNames = ['يعقوب قمر الدين دبيازة','خالد كشميري','خضر كرويتا','اسماعيل أحمد كنباوي','عثمان عبد الجليل ششة','محمد سنبل',];
+const dogNames = ["يعقوب قمر الدين دبيازة","خالد كشميري","خضر كرويتا","اسماعيل أحمد كنباوي","عثمان عبد الجليل ششة","محمد سنبل",];
 
 export const command: Command = {
 	name: "dog",
 	description: "Get dog photo",
 	run: async (client, interaction) => {
-		
+
 		const dogApiResponse: DogApiResponse = (
 			await axios.get("https://api.thedogapi.com/v1/images/search")
 		).data;

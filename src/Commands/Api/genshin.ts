@@ -48,17 +48,17 @@ export const command: Command = {
 				.setTitle(character.name)
 				.setDescription(character.description)
 				//.setThumbnail(`https://api.genshin.dev/characters/${request}/icon.png`)
-				.setThumbnail(`${character.images ? character.images.icon : 'https://api.genshin.dev/characters/${request}/icon.png'}`)
+				.setThumbnail(`${character.images ? character.images.icon : "https://api.genshin.dev/characters/${request}/icon.png"}`)
 				.addFields([
 					{
 						name: "Title",
 						value: character.title? character.title : character.name,
-						
+
 					},
 					{
 						name: "Rarity",
 						value: ":star:".repeat(Number(character.rarity)),
-						
+
 					},
 					{
 						name: "Nation",
@@ -105,9 +105,9 @@ export const command: Command = {
 						value: character.version,
 						inline: true
 					}
-					
+
 				])
-			.setImage(character.images.cover1? `${character.images.cover1}`:`https://api.genshin.dev/characters/${character.name}/gacha-splash.png`)
+				.setImage(character.images.cover1? `${character.images.cover1}`:`https://api.genshin.dev/characters/${character.name}/gacha-splash.png`);
 			/*.setImage(
 				`https://api.genshin.dev/characters/${request}/gacha-splash.png`
 			);*/
@@ -137,7 +137,7 @@ export const command: Command = {
 					{
 						name: "Rarity",
 						value: ":star:".repeat(Number(weapon.rarity)),
-						
+
 					},
 					{
 						name: "Base attack",
@@ -184,7 +184,7 @@ export const command: Command = {
 						value: weapon.weapontype,
 						inline: true
 					},
-					
+
 					{
 						name: "Appearance",
 						value: weapon.version,
@@ -212,7 +212,7 @@ export const command: Command = {
 			const Embed = new EmbedBuilder()
 				.setColor(client.env.BOT_COLOR)
 				.setTitle(artifact.name)
-				.setDescription(`Rarity: ${":star:".repeat(Number(artifact.rarity[0]))} | ${":star:".repeat(Number(artifact.rarity[1] ? artifact.rarity[1] : '0'))}`)
+				.setDescription(`Rarity: ${":star:".repeat(Number(artifact.rarity[0]))} | ${":star:".repeat(Number(artifact.rarity[1] ? artifact.rarity[1] : "0"))}`)
 				.setThumbnail(
 					artifact.flower
 						? `${artifact.images.flower}`
@@ -220,10 +220,10 @@ export const command: Command = {
 						: `${artifact.images.circlet}`
 				)
 
-				//.setThumbnail(`https://api.genshin.dev/artifacts/${artifact.images.flower}/icon.png`)
+			//.setThumbnail(`https://api.genshin.dev/artifacts/${artifact.images.flower}/icon.png`)
 
 				.addFields([
-					{ name: '\u200B', value: '\u200B' },
+					{ name: "\u200B", value: "\u200B" },
 					{
 						name: "2 piece bonus",
 						value: artifact["2pc"] ? artifact["2pc"] : "None",
@@ -234,7 +234,7 @@ export const command: Command = {
 						value: artifact["4pc"] ? artifact["4pc"] : "None",
 						inline: true
 					},
-					{ name: '\u200B', value: '\u200B' },
+					{ name: "\u200B", value: "\u200B" },
 					{
 						name: "Flower",
 						value: artifact.flower.name ? `${artifact.flower.name} : ${artifact.flower.description}` : "None",
