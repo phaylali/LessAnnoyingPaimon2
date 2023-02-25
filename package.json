@@ -21,10 +21,10 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/phaylali/lessannoyingpaimon.git"
+		"url": "git+https://github.com/phaylali/lessannoyingpaimon2.git"
 	},
 	"bugs": {
-		"url": "https://github.com/phaylali/lessannoyingpaimon/issues"
+		"url": "https://github.com/phaylali/lessannoyingpaimon2/issues"
 	},
 	"keywords": [
 		"bot",
@@ -32,35 +32,34 @@
 	],
 	"license": "MIT",
 	"dependencies": {
-		"@discordjs/opus": "^0.8.0",
-		"@discordjs/voice": "^0.11.0",
-		"@iamtraction/google-translate": "^1.1.2",
+		"@discordjs/opus": "^0.9.0",
+		"@discordjs/voice": "^0.14.0",
+		"@iamtraction/google-translate": "^2.0.1",
 		"avconv": "^3.1.0",
-		"axios": "^0.27.2",
-		"bufferutil": "^4.0.6",
-		"canvas": "^2.9.0",
-		"discord.js": "^14.1.2",
-		"dotenv": "^16.0.1",
+		"axios": "^1.3.4",
+		"bufferutil": "^4.0.7",
+		"canvas": "^2.11.0",
+		"discord.js": "^14.7.1",
+		"dotenv": "^16.0.3",
 		"erlpack": "^0.1.4",
-		"express": "^4.18.1",
+		"express": "^4.18.2",
 		"ffmpeg": "^0.0.4",
-		"ffmpeg-static": "^5.0.2",
-		"genshin-db": "^4.2.3",
+		"ffmpeg-static": "^5.1.0",
+		"genshin-db": "^4.3.5",
 		"sodium": "^3.0.2",
 		"typeface-jetbrains-mono": "^2.0.1",
-		"utf-8-validate": "^5.0.9",
+		"utf-8-validate": "^6.0.3",
 		"waifu.js": "^1.0.0",
-		"youtube-sr": "^4.3.0",
-		"ytdl-core": "^4.11.0",
-		"zlib-sync": "^0.1.7"
+		"youtube-sr": "^4.3.4",
+		"ytdl-core": "^4.11.2",
+		"zlib-sync": "^0.1.8"
 	},
 	"devDependencies": {
-		"@types/node": "^18.6.3",
-		"@typescript-eslint/eslint-plugin": "^5.31.0",
-		"@typescript-eslint/parser": "^5.31.0",
-		"eslint": "^8.20.0",
-		"prettier": "^2.7.1",
-		"typescript": "^4.7.4"
+		"@types/node": "^18.14.1",
+		"@typescript-eslint/eslint-plugin": "^5.53.0",
+		"@typescript-eslint/parser": "^5.53.0",
+		"eslint": "^8.34.0",
+		"prettier": "^2.8.4",
+		"typescript": "^4.9.5"
 	}
-	
 }
