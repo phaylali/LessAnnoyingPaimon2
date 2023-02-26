@@ -27,7 +27,7 @@ export const event: Event = {
 
 		registerFont(fontFile("OmniversifyGenshin.ttf"), { family: "OmniversifyGenshinImpact" });
 		const channel = client.channels.cache.get(channelId);
-		(channel as TextChannel).send({ content: "I'M BACK",//files: ['./assets/back.webp',]
+		(channel as TextChannel).send({ content: "I'M BACK",
 		});
 
 	}

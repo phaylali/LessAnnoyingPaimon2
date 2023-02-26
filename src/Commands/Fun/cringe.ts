@@ -1,15 +1,5 @@
 import { Command } from "../../Interfaces";
-import {
-	//ColorResolvable,
-	EmbedBuilder
-} from "discord.js";
-/*import {
-	//existsSync,
-	readdirSync
-} from "fs";*/
-//import { join } from "path";
-//const dir = join(__dirname, "/../../../Media/Cringe");
-//const files = readdirSync(dir);
+import { EmbedBuilder } from "discord.js";
 
 export const command: Command = {
 	name: "cringe",
@@ -37,108 +27,93 @@ export const command: Command = {
 			});
 		}
 
-		/*if (existsSync(`${dir}/${text}.webm`)) {
-			return await interaction.reply({files: [`${dir}/${text}.webm`,] });
+		const result = all.map((a) => a.name);
+		if (result.includes(text)) {
+			const vid = all.find((element) => element.name === text);
+
+			return await interaction.reply(
+				`${vid.link}`
+			);
 		} else if (text === "help") {
-			return await interaction.reply({ embeds:[Embed] });
-		}*/
-		/*if (text === "help") {
-			return await interaction.reply(text);
-		} else return await interaction.reply({ files: [`${dir}/mexico.webm`] });*/
-		/*for (const file of files) {
-			Embed.addFields({
-				name: `${file.replace(".webm", "")}`,
-				value: `Oh No Cringe ${file} Version`
-			});
-		} */
-		const result = all.map(a => a.name);
-		if (result.includes(text)){
-			all.find(element => element.name = text).link;
-			return await interaction.reply(`${all.find(element => element.name = text).link}`);
-		}else if (text === "help"){
-			return await interaction.reply({ embeds:[Embed] });
-		}else return await interaction.reply(mexico.link);
-
-
-
-
+			return await interaction.reply({ embeds: [Embed] });
+		} else return await interaction.reply(mexico.link);
 	}
 };
 
 const australia = {
 	name: "australia",
-	link: "https://i.imgur.com/wAGA2zA.mp4"
+	link: "https://files.catbox.moe/ag6ocf.webm"
 };
 const china = {
 	name: "china",
-	link: "https://i.imgur.com/MjBmJQD.mp4"
+	link: "https://files.catbox.moe/50n50g.webm"
 };
 const egypt = {
 	name: "egypt",
-	link: "https://i.imgur.com/1zQ1bIv.mp4"
+	link: "https://files.catbox.moe/jgxbcl.webm"
 };
 const england = {
 	name: "england",
-	link: "https://i.imgur.com/yHE9D4n.mp4"
+	link: "https://files.catbox.moe/nw2a5n.webm"
 };
 const france = {
 	name: "france",
-	link: "https://i.imgur.com/2v9LBYh.mp4"
+	link: "https://files.catbox.moe/onseu0.webm"
 };
 const india = {
 	name: "india",
-	link: "https://i.imgur.com/O1KKsCe.mp4"
+	link: "https://files.catbox.moe/n6zdbx.webm"
 };
 const italia = {
 	name: "italia",
-	link: "https://i.imgur.com/sfVn60n.mp4"
+	link: "https://files.catbox.moe/9hhe04.webm"
 };
 const japan = {
 	name: "japan",
-	link: "https://i.imgur.com/iDjOMmi.mp4"
+	link: "https://files.catbox.moe/gs6zgo.webm"
 };
 const marrakesh = {
 	name: "marrakesh",
-	link: "https://i.imgur.com/6oolZAj.mp4"
+	link: "https://files.catbox.moe/7xu0rz.webm"
 };
 
 const mexico = {
 	name: "mexico",
-	link: "https://i.imgur.com/31H2I0a.mp4"
+	link: "https://files.catbox.moe/w1y7pm.webm"
 };
 
 const rabat = {
 	name: "rabat",
-	link: "https://i.imgur.com/4mbmx3N.mp4"
+	link: "https://files.catbox.moe/nkhj01.webm"
 };
 
 const russia = {
 	name: "russia",
-	link: "https://i.imgur.com/4BZ87af.mp4"
+	link: "https://files.catbox.moe/sa937j.webm"
 };
 
 const saudia = {
 	name: "saudia",
-	link: "https://i.imgur.com/jrvXSTL.mp4"
+	link: "https://files.catbox.moe/y94hsx.webm"
 };
 const silent = {
 	name: "silent",
-	link: "https://i.imgur.com/wljid2Q.mp4"
+	link: "https://files.catbox.moe/ia3nrw.webm"
 };
 
 const sous = {
 	name: "sous",
-	link: "https://i.imgur.com/qlTGSrp.mp4"
+	link: "https://files.catbox.moe/acrywq.webm"
 };
 
 const sweden = {
 	name: "sweden",
-	link: "https://i.imgur.com/H15d7kk.mp4"
+	link: "https://files.catbox.moe/z3f2qc.webm"
 };
 
 const tangier = {
 	name: "marrakesh",
-	link: "https://i.imgur.com/nqSbykW.mp4"
+	link: "https://files.catbox.moe/d07nao.webm"
 };
 
 const all = [
